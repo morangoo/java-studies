@@ -6,9 +6,9 @@ public class Person {
         return this.name;
     }
 
+    // Setter
     public void setName(String newName) {
         this.name = newName;
     }
 
-    // Setter
 }
