@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
 
     static String invert(String text) {
@@ -9,6 +11,10 @@ public class App {
     };
 
     public static void main(String[] args) throws Exception {
-        System.out.println(invert("java"));
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Type something:");
+            String inputText = scanner.nextLine();
+            System.out.println(invert(inputText));
+        }
     };
 }
